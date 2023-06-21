@@ -2,11 +2,6 @@
 
 Some basic Git commands are:
 ```
-git status
-git add
-git commit
-```
-
 git clone https://github.com/influxdata/telegraf.git
 
 cd ./telegraf/plugins/outputs/
@@ -28,3 +23,6 @@ cp telegraf_redis_plugins/plugins/inputs/all/* ./telegraf/plugins/inputs/all/
 cd ./telegraf
 
 make
+```
+
+
