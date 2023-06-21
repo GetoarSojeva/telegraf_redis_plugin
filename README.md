@@ -1,5 +1,11 @@
 # telegraf_redis_plugins
 
+Some basic Git commands are:
+```
+git status
+git add
+git commit
+```
 
 git clone https://github.com/influxdata/telegraf.git
 
