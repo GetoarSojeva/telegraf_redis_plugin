@@ -1,29 +1,24 @@
 
 ## How to install plugins:
 ```bash session
-git clone https://github.com/influxdata/telegraf.git
+foo@bar:~$ git clone https://github.com/influxdata/telegraf.git
 
-cd ./telegraf/plugins/outputs/
-mkdir redis_output
+foo@bar:~$ cd ./telegraf/plugins/outputs/
+foo@bar:~$ mkdir redis_output
 
+foo@bar:~$ cp -r telegraf_redis_plugins/plugins/outputs/redis_output/* ./telegraf/plugins/outputs/redis_output
+foo@bar:~$ cp -r telegraf_redis_plugins/plugins/outputs/all/* ./telegraf/plugins/outputs/all/
 
-cp -r telegraf_redis_plugins/plugins/outputs/redis_output/* ./telegraf/plugins/outputs/redis_output
-cp -r telegraf_redis_plugins/plugins/outputs/all/* ./telegraf/plugins/outputs/all/
+foo@bar:~$ cd ./telegraf/plugins/inputs/
+foo@bar:~$ mkdir redis_input
 
+foo@bar:~$ cp telegraf_redis_plugins/plugins/inputs/redis_output/* ./telegraf/plugins/inputs/redis_input
+foo@bar:~$ cp telegraf_redis_plugins/plugins/inputs/all/* ./telegraf/plugins/inputs/all/
 
+foo@bar:~$ cd ./telegraf
 
-cd ./telegraf/plugins/inputs/
-mkdir redis_input
-
-cp telegraf_redis_plugins/plugins/inputs/redis_output/* ./telegraf/plugins/inputs/redis_input
-cp telegraf_redis_plugins/plugins/inputs/all/* ./telegraf/plugins/inputs/all/
-
-
-cd ./telegraf
-
-make
-
-./telegraf
+foo@bar:~$ make
+foo@bar:~$ ./telegraf
 ```
 
 
