@@ -7,14 +7,14 @@ foo@bar:~$ git clone git@github.com:GetoarSojeva/telegraf_redis_plugin.git
 foo@bar:~$ cd ~/telegraf/plugins/outputs/
 foo@bar:~$ mkdir redis_output
 
-foo@bar:~$ cp -r ~/telegraf_redis_plugins/plugins/outputs/redis_output/* ./telegraf/plugins/outputs/redis_output
-foo@bar:~$ cp -r ~/telegraf_redis_plugins/plugins/outputs/all/* ./telegraf/plugins/outputs/all/
+foo@bar:~$ cp -r ~/telegraf_redis_plugins/plugins/outputs/redis_output/* ~/telegraf/plugins/outputs/redis_output
+foo@bar:~$ cp -r ~/telegraf_redis_plugins/plugins/outputs/all/* ~/telegraf/plugins/outputs/all/
 
 foo@bar:~$ cd ~/telegraf/plugins/inputs/
 foo@bar:~$ mkdir redis_input
 
-foo@bar:~$ cp ~/telegraf_redis_plugins/plugins/inputs/redis_output/* ./telegraf/plugins/inputs/redis_input
-foo@bar:~$ cp ~/telegraf_redis_plugins/plugins/inputs/all/* ./telegraf/plugins/inputs/all/
+foo@bar:~$ cp ~/telegraf_redis_plugins/plugins/inputs/redis_output/* ~/telegraf/plugins/inputs/redis_input
+foo@bar:~$ cp ~/telegraf_redis_plugins/plugins/inputs/all/* ~/telegraf/plugins/inputs/all/
 
 foo@bar:~$ cd ~/telegraf
 
