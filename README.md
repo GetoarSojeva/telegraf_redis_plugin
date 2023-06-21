@@ -23,7 +23,7 @@ foo@bar:~$ ./telegraf
 
 
 
-## Telegraf Config
+## Telegraf Config - telegraf.conf
 
 ```toml
 [[inputs.redis_input]]
