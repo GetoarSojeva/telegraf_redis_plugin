@@ -8,7 +8,7 @@ foo@bar:~$ cd ~/telegraf/plugins/outputs/
 foo@bar:~$ mkdir redis_output
 
 foo@bar:~$ cp -r ~/telegraf_redis_plugins/plugins/outputs/redis_output/* ./telegraf/plugins/outputs/redis_output
-foo@bar:~$ cp -r ./telegraf_redis_plugins/plugins/outputs/all/* ./telegraf/plugins/outputs/all/
+foo@bar:~$ cp -r ~/telegraf_redis_plugins/plugins/outputs/all/* ./telegraf/plugins/outputs/all/
 
 foo@bar:~$ cd ~/telegraf/plugins/inputs/
 foo@bar:~$ mkdir redis_input
