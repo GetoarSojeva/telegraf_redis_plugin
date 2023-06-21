@@ -1,6 +1,5 @@
-# How to install redis plugins for telegraf
 
-How to install plugins:
+## How to install plugins:
 ```
 git clone https://github.com/influxdata/telegraf.git
 
@@ -26,3 +25,16 @@ make
 ```
 
 
+
+## Telegraf Config
+
+```toml
+[[inputs.redis_input]]
+  servers = ["127.0.0.1:6379"]
+  queue = "myqueue_input"
+
+
+[[outputs.redis_output]]
+  servers = ["127.0.0.1:6379"]
+  queue = "myqueue_output"
+```
