@@ -1,6 +1,6 @@
-# telegraf_redis_plugins
+# How to install redis plugins for telegraf
 
-Some basic Git commands are:
+How to install plugins:
 ```
 git clone https://github.com/influxdata/telegraf.git
 
