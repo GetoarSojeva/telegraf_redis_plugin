@@ -22,6 +22,8 @@ cp telegraf_redis_plugins/plugins/inputs/all/* ./telegraf/plugins/inputs/all/
 cd ./telegraf
 
 make
+
+./telegraf
 ```
 
 
