@@ -1,6 +1,6 @@
 
 ## How to install plugins:
-```console
+```bash session
 git clone https://github.com/influxdata/telegraf.git
 
 cd ./telegraf/plugins/outputs/
