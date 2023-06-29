@@ -46,7 +46,9 @@ func (r *RedisInput) Gather(acc telegraf.Accumulator) error {
 			fields := map[string]interface{}{
 				"value": string(value),
 			}
+
 			acc.AddFields("redis_queue", fields, nil)
+
 		} else if reply == nil {
 			// Queue is empty
 			break
@@ -55,6 +57,7 @@ func (r *RedisInput) Gather(acc telegraf.Accumulator) error {
 		}
 	}
 	return nil
+
 }
 
 func init() {

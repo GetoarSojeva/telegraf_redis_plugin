@@ -43,7 +43,8 @@ func (r *RedisOutput) Write(metrics []telegraf.Metric) error {
 	defer conn.Close()
 
 	for _, metric := range metrics {
-		value := metric
+		value := metric.Fields()["value"].(string)
+		// fmt.Println(value)
 
 		_, err = conn.Do("RPUSH", r.Queue, value)
 		if err != nil {
